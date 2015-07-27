@@ -4,17 +4,12 @@
  * and open the template in the editor.
  */
 
-package wcr.gui;
+package wcr.controller;
 
-import javafx.stage.Stage;
-
-/** Class to choose the comic to be displayed, as well as choice of style sheet
+/**
  *
  * @author Shanshan Chen
  */
-public class ChooseComicDialog {
-
-    ChooseComicDialog(Stage stage) {
-    }
+public class StyleController {
 
 }

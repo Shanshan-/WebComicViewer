@@ -23,7 +23,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.Window;
-import wcr.ComicController;
+import wcr.controller.ComicController;
 
 /** The class used to create the main body of the reader
  *
@@ -39,7 +39,6 @@ public class WCR_GUI {
     Scene primaryScene;
     
     //Related dialogs
-    ChooseComicDialog choiceDialog;
     ReaderSetupDialog styleDialog;
     
     //GUI Elements
@@ -76,7 +75,6 @@ public class WCR_GUI {
     }
     
     private void initDialogs() {
-        choiceDialog = new ChooseComicDialog(primaryStage);
         styleDialog = new ReaderSetupDialog(primaryStage);
     }
     
@@ -118,7 +116,7 @@ public class WCR_GUI {
     
     private void initHandlers() {
         loadComicButton.setOnAction(e -> {
-            controller.handleNewComicRequest(this, choiceDialog);
+            controller.handleNewComicRequest(this);
         });
         createStyleButton.setOnAction(e -> {
             controller.handleNewStyleRequest(this, styleDialog);

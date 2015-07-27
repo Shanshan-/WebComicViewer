@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package wcr;
+package wcr.controller;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -13,7 +13,6 @@ import java.util.List;
 import javafx.scene.image.Image;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
-import wcr.gui.ChooseComicDialog;
 import wcr.gui.ReaderSetupDialog;
 import wcr.gui.WCR_GUI;
 
@@ -25,7 +24,7 @@ public class ComicController {
 
     File prevDirectory = null;
     
-    public void handleNewComicRequest(WCR_GUI gui, ChooseComicDialog choiceDialog) {
+    public void handleNewComicRequest(WCR_GUI gui) {
         // AND NOW ASK THE USER FOR THE COURSE TO OPEN
         DirectoryChooser comicDirectoryChooser = new DirectoryChooser();
         if(prevDirectory != null)

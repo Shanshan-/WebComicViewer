@@ -1,0 +1,29 @@
+auto scroll
+    Multithread the following:
+    /*
+    int autoScrollOffset = 5;
+    Point p = ScrollPane.getScrollPostion();
+    p.move(p.getX(), p.getY() + autoScrollOffset);
+    ScrollPane.setScrollPosition(p);
+    */
+zoom in/out controls
+    - double clicking on an image will bring up full size in a new window
+favorites list
+    - store into a file
+    - options for editing this list
+        - add, remove, move up, move down, rename, etc.
+        - maybe add a button for adding/removing from favorites (?)
+upon starting:
+    - load favorites
+    - load last directory
+    - load saved styles
+style editor
+    - use javafx built-in color picker to edit background color, image border, and pane border
+    - background image
+        - tile, fill, static, tiled moving
+    - two different tabs (for future adding of options)
+fullscreen viewing
+    - esc. key exiting
+todo
+    - fix ordering of images
+        - either assume that files are already in order, or create a numbering setup that must be followed
